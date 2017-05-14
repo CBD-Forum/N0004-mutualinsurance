@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">拉手互助</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">加载中…</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="alert_no_internet">网络连接异常</string>
+    <string name="alert_no_internet_refresh">重新加载</string>
+    <string name="alert_no_message">您还没有相关的消息通知</string>
+    <string name="alert_message_body">可以去看看其他</string>
+    <string name="alert_check_internet">请确认您的网络设置!</string>
+    <string name="response_again">重新加载</string>
+    <string name="request_error">请求出错</string>
+    <string name="no_more_item_data">无更多条目数据</string>
+    <string name="alert_no_supply">暂无数据</string>
+</resources>

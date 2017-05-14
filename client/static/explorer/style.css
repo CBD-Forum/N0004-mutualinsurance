@@ -1,0 +1,107 @@
+html *{font-family:OpenSansLight,'Helvetica Neue',Arial}
+.Header{margin-top:-10px;padding-top:30px;padding-right:35%;padding-bottom:30px;background-color:#212832;background-position:-30px -200px;background-size:50% 350%;color:#FFF;text-align:center;font-style:normal;font-size:250%;background-image:url(/static/explorer/image.png)}
+.Header h1 {font-weight: 200;}
+.Navigation{float:left;display:block;margin-top:-25px;margin-right:5%;margin-bottom:30px;margin-left:5%;padding:0;padding-top:5px;padding-bottom:5px;width:90%;border-radius:4px;background-color:#557ae1;box-shadow:3px 3px 3px #02090f;list-style-type:none;font-size:120%;line-height:40px}
+.Navigation li{display:inline;padding-right:5px;padding-left:5px}
+.Navigation a{padding:10px 10px 10px 10px;color:#FFF;text-decoration:none}
+.Navigation a:hover{border-style:initial;border-radius:5px;background-color:#385bba}
+.Navigation li:before{content:"|  "}
+.Navigation li:first-child:before{content:none}
+.menu-trigger{display:none;margin-right:5%;margin-bottom:-3px;margin-left:5%;padding:3px;padding-top:5px;padding-left:15px;max-width:90%;border-radius:5px;background-color:#1f242b;text-align:left}
+.menu-button{margin-top:10px;margin-bottom:10px;padding-top:10px;padding-bottom:10px;width:120px}
+@media screen and (max-width:600px){.Navigation{float:none;display:none;margin-top:0!important;padding-top:10px!important;border-top-right-radius:0;border-top-left-radius:0;background-color:#1f242b;line-height:20px}
+.Navigation li{display:block;padding-bottom:15px}
+.Navigation li:before{content:none}
+.menu-trigger{display:block}
+}
+.Block{position:relative;float:left;margin-top:1%;margin-bottom:30px;margin-left:5%;padding-bottom:30px;width:52.5%;height:auto;max-width:52.5%;min-height:600px;border-radius:5px;background-color:#1f242b;box-shadow:3px 3px 3px #02090f}
+.Block_title{padding-left:20px;color:#FFF}
+.Block_title h1, .Block_title b {font-weight: 200;}
+.Block_table{position:absolute;width:100%;height:100%}
+.Current{float:left;margin-top:1%;margin-left:2.5%;width:35%;max-width:35%;border-radius:5px;background-color:#1F242B;box-shadow:3px 3px 3px #02090f;color:#FFF;word-wrap:break-word}
+.Current_info{padding-top:10px;padding-bottom:5px;padding-left:20px;background-color:#353f4d;font-size:120%}
+.Current_info b {color: rgba(255, 255, 255, .3)}
+.Search{float:left;margin-top:2.5%;margin-left:2.5%;width:35%;max-width:35%;border-radius:5px;background-color:#1f242b;box-shadow:3px 3px 3px #02090f}
+.Panel{margin-top:20px;margin-bottom:-20px!important;padding-top:10px;border-radius:5px;border-top-right-radius:0;border-top-left-radius:0;background-color:#353f4d}
+.Search_top{margin-bottom:20px;padding-left:20px;color:#FFF}
+.Results{padding-left:20px;box-shadow:3px #02090f;color:#FFF;font-size:130%}
+.Results_button{padding-bottom:20px;box-shadow:3px 3px 3px #02090f;text-align:center;font-size:300%}
+.Submit{width:280px;height:40px}
+.Submit:hover{cursor:pointer}
+.Network{float:right;margin-top:2.5%;margin-right:5%;margin-bottom:30px;padding-bottom:30px;width:35%;max-width:35%;border-radius:10px;background-color:#1f242b;box-shadow:3px 3px 3px #02090f;color:#FFF}
+.Network_child{text-align:center;overflow-x: auto}
+.Graph{float:left;margin-bottom:30px;margin-left:5%;width:90%;height:auto;border-radius:3px;background-color:#1f242b;box-shadow:3px 3px 3px #02090f}
+.Graph h2{padding-left:20px;font-size:150%}
+.Performance{float:left;margin-left:2.5%;width:27.5%;height:300px;max-width:27.5%;border-radius:3px;background-color:#353F4D;box-shadow:3px 3px 3px #02090f;color:#FFF}
+.Chaincode{float:left;margin-left:2.5%;width:31.25%;height:300px;max-width:31.25%;border-radius:3px;background-color:#353F4D;box-shadow:3px 3px 3px #02090f;color:#FFF}
+.Volume{float:left;margin-left:2.5%;width:31.25%;height:300px;max-width:31.25%;border-radius:3px;background-color:#353F4D;box-shadow:3px 3px 3px #02090f;color:#FFF}
+.Symbol{margin:0;margin-bottom:-14%;color:orange;font-weight:700}
+.Data{margin:0;text-align:center;font-weight:700;font-size:200%}
+.Symbol2{margin-top:-14%;color:#24B3DC;text-align:right;font-weight:700;font-size:120%}
+.Latency{float:left;margin-left:5%;width:42.5%;max-width:42.5%}
+.Latency h3{padding-top:5%;padding-bottom:5%}
+.Latency hr{margin-top:15%;margin-bottom:25%}
+.Capacity{float:left;margin-left:5%;width:42.5%;max-width:42.5%}
+.Capacity h3{padding-top:5%;padding-bottom:5%}
+.Capacity hr{margin-top:15%;margin-bottom:25%}
+.Chaincode p{font-size:130%}
+.Volume p{font-size:130%}
+.chart{margin-top:5%;margin-right:5%;padding:3px;height:120px;border-radius:3px;background:#1F242B;box-shadow:2px 2px 2px #666}
+.chart div{width:0;transition:all 1s ease-out}
+.chart div{margin:5px;padding:3px;max-width:90%;background-color:#24b3dc;color:#fff;text-align:right;font:10px sans-serif}
+.Top{padding-top:1px;padding-bottom:1px;border-bottom:1px solid #000;border-top-right-radius:5px;border-top-left-radius:5px;background-color:#557ae1}
+.Graph2{position:relative;float:right;overflow:scroll;overflow-y:hidden;margin-top:5%;margin-right:2.5%;margin-bottom:5%;width:46.25%;max-width:46.25%;background-color:#353F4D;box-shadow:3px 3px 3px #02090f;color:#FFF}
+.Graph2-content{position:absolute;top:0;left:0;display:inline-block}
+#line_graph{margin-top:20px;margin-left:5%;width:90%;/*width:500px;*/height:400px;background:#1F242B;box-shadow:2px 2px 2px #666}
+#bar_graph{margin-top:20px;margin-bottom:20px;margin-left:5%;width: 90%;/*width:500px;*/height:400px;background:#1F242B;box-shadow:2px 2px 2px #666}
+.x.axis{fill:#FFF}
+.y.axis{fill:#FFF}
+.Trans{float:left;margin-right:5%;margin-bottom:30px;margin-left:5%;width:90%;border-radius:3px;background-color:#1f242b;box-shadow:3px 3px 3px #02090f;word-wrap:break-word}
+.Loading_symbol{text-align:center;font-size:200%}
+.modalDialog{position:fixed;top:0;top:0;right:0;right:0;bottom:0;bottom:0;left:0;left:0;overflow:scroll;background:rgba(0,0,0,.8);color:#000;word-wrap:break-word;font-size:80%;font-family:Arial,sans-serif;opacity:0;transition:all 2.5s;transition:opacity .4s ease-in;pointer-events:none;scroll-behavior:auto}
+.modalDialog:target{z-index:100;opacity:1;pointer-events:all}
+.modalDialog>div{position:relative;margin:10% auto;padding:5px 20px 13px 20px;width:700px;border-radius:5px;background:#1F242B;color:#FFF}
+.close{position:absolute;top:-10px;right:-12px;padding:14px 16px;width:24px;outline:0;border:1px solid #000;border-radius:12px;background:#344B61;box-shadow:1px 1px 3px #000;color:#FFF;text-align:center;text-decoration:none;font-weight:700;font-size:150%;line-height:25px;cursor:pointer}
+body{z-index:-1;margin:0;background-color:#333d47;word-wrap:break-word;font-size:75%}
+footer{float:left;margin:0;width:100%;height:70px;background-color:#212832;background-position:-30px -100px;background-size:100% 1000%;background-image:url(/static/explorer/image.png)}
+.Footer_content{margin-right:5%;margin-left:5%;padding-top:20px;width:90%;outline:0;color:#FFF;text-align:center;text-decoration:none;font-weight:bolder;font-size:150%}
+table{width:100%;max-width:100%;border-collapse:collapse;border-radius:6px;text-align:center;word-wrap:break-word;border-spacing:0}
+table td,table th{padding:10px;color: rgba(255, 255, 255, .7)}
+table tr{border-bottom:1px solid #000!important;border-radius:6px}
+tr:nth-child(even){background-color:#1F242B;color:#FFF}
+tr:nth-child(odd){background-color:#353F4D;color:#FFF}
+tr:first-child{background-color:#353F4D;color:#FFF}
+button{display: inline-block;padding: 3px 8px;border: 1px solid transparent;border-radius: 2px;vertical-align: middle;color: #fff;background-color: #496ed3;cursor:pointer;-webkit-transition: all 0.1s; -moz-transition: all 0.1s; transition: all 0.1s}
+button:focus, button:active {-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(136, 136, 136, 0.6);-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(136, 136, 136, 0.6);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(136, 136, 136, 0.6)}
+.btn:hover {text-decoration: none;}
+button:focus, button:hover {background-color: #5f84e9}
+button.btn_ignored {color: #496ed3;background-color: transparent;}
+button.btn_ignored:hover,
+button.btn_ignored:active {background-color:#5f84e9;color: #fff}
+@media only screen and (max-width:1036px){.Block{margin-right:5%!important;margin-left:5%!important;padding:0!important;width:90%!important;max-width:90%!important}
+.Current{margin-top:2.5%;margin-left:5%;padding:0!important;width:42.5%!important;max-width:42.5%!important}
+.Search{float:right!important;margin-right:5%!important;width:42.5%!important;max-width:42.5%!important}
+.Performance{margin-right:5%!important;margin-bottom:2.5%;margin-left:5%!important;width:90%!important;height:200px!important;max-width:90%!important}
+.Chaincode{margin-right:5%!important;margin-bottom:20px;margin-left:5%!important;width:90%!important;max-width:90%!important}
+.Volume{margin-right:5%!important;margin-bottom:2.5%;margin-left:5%!important;width:90%!important;max-width:90%!important}
+.Capacity h3{padding-bottom:0!important}
+.Capacity hr{margin-top:25px!important;margin-bottom:25px!important}
+.Latency h3{padding-bottom:0!important}
+.Latency hr{margin-top:25px!important;margin-bottom:25px!important}
+.Symbol{margin-bottom:-12%}
+.Graph2{margin-top:0;margin-right:5%!important;margin-bottom:2.5%!important;width:90%!important;max-width:90%!important}
+.Network{margin-right:5%;margin-left:5%;width:90%!important;max-width:90%!important}
+.Header{margin-top:0!important;margin-bottom:10px!important;padding-right:0!important}
+.modalDialog>div{width:400px!important}
+}
+@media only screen and (max-width:700px){.Search{margin-right:5%!important;margin-left:5%!important;padding:0!important;width:90%!important;max-width:90%!important;background-repeat:no-repeat!important}
+.Current{margin-right:5%!important;margin-left:5%!important;width:90%!important;max-width:90%!important}
+.Network{padding:0!important}
+.Header{margin-top:-30px!important;margin-bottom:-20px!important;background-size:100% 200%!important;background-repeat:no-repeat!important}
+table{border-bottom:0}
+table thead{display:none}
+table tr{display:block}
+table td{display:block;text-align:right;font-size:13px}
+table td:last-child{border-bottom:0}
+table td:before{float:left;content:attr(data-label);text-transform:uppercase;font-weight:700}
+}

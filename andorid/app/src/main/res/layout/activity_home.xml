@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/leftTab"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tabs_left"
+            android:text="互助列表"/>
+
+        <RadioButton
+            android:id="@+id/middleTab"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tabs_middle"
+            android:text="个人主页"/>
+
+        <RadioButton
+            android:id="@+id/rightTab"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tabs_right"
+            android:text="发起理赔"/>
+
+        <RadioButton
+            android:id="@+id/blockTab"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tabs_right"
+            android:text="区块信息"/>
+
+    </RadioGroup>
+</LinearLayout>

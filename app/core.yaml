@@ -1,0 +1,64 @@
+###############################################################################
+#
+#    App section
+#
+###############################################################################
+app:
+     # The Address this App will bind to for providing services
+    address: 0.0.0.0:7059
+    # Whether the Peer should programmatically determine the address to bind to.
+    # This case is useful for docker containers.
+    addressAutoDetect: false
+
+    # Setting for runtime.GOMAXPROCS(n). If n < 1, it does not change the current setting
+    gomaxprocs: -1
+    workers: 2
+    
+    # nodeID
+    nodeID: node0
+
+    # Setting for notarization. 
+    mutualinsurance:
+        # chaincode path
+        chaincodePath: "github.com/chainnova/mutualinsurance/chaincode"
+        deployer: "lukas"
+        deployerSecret: "NPKYL39uKbkj"
+
+    # TLS Settings
+    tls:
+        enabled:  false
+        cert:
+            file: testdata/server1.pem
+        key:
+            file: testdata/server1.key
+        # The server name use to verify the hostname returned by TLS handshake
+        serverhostoverride:
+
+    # PKI member services properties
+    pki:
+        eca:
+            paddr: membersrvc:7054
+        tca:
+            paddr: membersrvc:7054
+        tlsca:
+            paddr: membersrvc:7054
+        tls:
+            enabled: false
+            rootcert:
+                file: tlsca.cert
+            # The server name use to verify the hostname returned by TLS handshake
+            serverhostoverride:
+
+###############################################################################
+#
+#    Listener section
+#
+###############################################################################
+listener:
+    # nodeID
+    nodeID: node0
+    # infodisclosure
+    infodisclosure:
+        enrollID: jim
+        enrollSecret: 6avZQLwcUe9b
+        chaincodeName: 568daff01a31da9963cfb7fdee08db09eee09ba2df37f3c438b5dd3cfaa51c92046e097357b9df5267fc32456887bdc57f20f808f028d7784f1edb4cd4f05cdd

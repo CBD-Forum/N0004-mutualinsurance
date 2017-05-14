@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_new_loading_layout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/transparent"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp">
+
+    <com.pingan.demo.view.GifView
+        android:id="@+id/iv_new_loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:enabled="false"/>
+
+</RelativeLayout>

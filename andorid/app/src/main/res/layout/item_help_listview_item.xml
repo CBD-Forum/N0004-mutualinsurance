@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:clickable="false"
+              android:descendantFocusability="afterDescendants"
+              android:focusable="false"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:text="资助详情"
+        android:textColor="#2e2e2e"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ededed"/>
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="被资助人姓名"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/name_arrow"
+            android:layout_width="22dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow2_07"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="联系方式"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/mobile_arrow"
+            android:layout_width="22dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow2_07"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/mobile_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="资助金额（元）"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/money_text"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <RelativeLayout
+        android:id="@+id/report_third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="第三方报告"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/report_third_arrow"
+            android:layout_width="22dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow2_07"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/report_third_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/report_visitor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="探望者报告"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/report_visitor_arrow"
+            android:layout_width="22dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow2_07"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/report_visitor_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/receipt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="收款凭证"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/receipt_arrow"
+            android:layout_width="22dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow2_07"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/receipt_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/time_claimed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="公示时间"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/time_claimed_arrow"
+            android:layout_width="22dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow2_07"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/time_claimed_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/time_approved_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:text="筹款时间"
+            android:textColor="#2e2e2e"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/time_approved_arrow"
+            android:layout_width="22dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow2_07"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dash_line_1"
+        android:layerType="software"/>
+
+    <TextView
+        android:id="@+id/time_approved_text"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical|left"
+        android:includeFontPadding="false"
+        android:textColor="#494949"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

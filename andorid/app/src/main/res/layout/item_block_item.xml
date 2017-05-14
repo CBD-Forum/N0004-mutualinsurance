@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:background="@color/color_cccccc"
+              android:orientation="horizontal">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_999999"/>
+
+    <TextView
+        android:id="@+id/block_height"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="block#"
+        android:textColor="@color/black"
+        android:textSize="14dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_999999"/>
+
+    <TextView
+        android:id="@+id/block_prehash"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="上一区块哈希"
+        android:textColor="@color/black"
+        android:textSize="14dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_999999"/>
+
+    <TextView
+        android:id="@+id/block_trans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="交易量"
+        android:textColor="@color/black"
+        android:textSize="14dp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_999999"/>
+</LinearLayout>

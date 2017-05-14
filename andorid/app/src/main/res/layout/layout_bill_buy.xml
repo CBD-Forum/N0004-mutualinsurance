@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="30dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:includeFontPadding="false"
+                    android:text="姓名"
+                    android:textColor="#494949"
+                    android:textSize="14dp"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:background="@null"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="13dp"
+                android:background="#ededed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginBottom="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:includeFontPadding="false"
+                    android:text="身份证号"
+                    android:textColor="#494949"
+                    android:textSize="14dp"/>
+
+                <EditText
+                    android:id="@+id/idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:background="@null"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="13dp"
+                android:background="#ededed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginBottom="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:includeFontPadding="false"
+                    android:text="手机号"
+                    android:textColor="#494949"
+                    android:textSize="14dp"/>
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:background="@null"
+                    android:textColor="#2e2e2e"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="13dp"
+                android:background="#ededed"/>
+
+            <LinearLayout
+                android:id="@+id/id_csa_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:text="南航会员号"
+                        android:textColor="#494949"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/id_csa"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:background="@null"
+                        android:textColor="#2e2e2e"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="#ededed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_driver_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:text="驾驶证"
+                        android:textColor="#494949"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/id_driver"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:background="@null"
+                        android:textColor="#2e2e2e"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="#ededed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_driving_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:text="行驶证"
+                        android:textColor="#494949"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/id_driving"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:background="@null"
+                        android:textColor="#2e2e2e"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="#ededed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_didi_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:text="滴滴账号"
+                        android:textColor="#494949"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/id_didi"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:background="@null"
+                        android:textColor="#2e2e2e"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="#ededed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginBottom="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:includeFontPadding="false"
+                    android:text="充值金额"
+                    android:textColor="#494949"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/money_text_20"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/money_text_2"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="20元"
+                    android:textColor="#494949"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/money_text_50"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/money_text_2"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="50元"
+                    android:textColor="@color/color_494949"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/money_text_100"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/money_text_2"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="100元"
+                    android:textColor="#494949"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="13dp"
+                android:background="#ededed"/>
+
+            <LinearLayout
+                android:id="@+id/medical_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:text="您是否正在或者曾经患有以下疾病或存在下列情况："
+                        android:textColor="#494949"
+                        android:textSize="14dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/medical_confirm1"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/money_text_2"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="是"
+                            android:textColor="#494949"
+                            android:textSize="14dp"/>
+
+                        <TextView
+                            android:id="@+id/medical_confirm2"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/money_text_1"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="否"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:includeFontPadding="false"
+                        android:text="恶性肿瘤，交界性肿瘤\n主动脉疾病，室壁瘤，冠心病，心肌梗塞、风湿性心脏病、心内膜炎、心肌病、阿尔兹海默病、癫痫、脑炎、及脑炎后遗症、脑膜炎及脑膜炎后遗症、脑外伤后综合症、精神病、脊髓疾病、严重痴呆、慢行支气管炎、支气管扩张症、肺结核、尘肺"
+                        android:textColor="#494949"
+                        android:textSize="14dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="#ededed"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:lines="1"
+                    android:text="我已阅读并确认《互助要求》，《会员公约》、《保障条款》"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/charge_btn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="加入计划"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

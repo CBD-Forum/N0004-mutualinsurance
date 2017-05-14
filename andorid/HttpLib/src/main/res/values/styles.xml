@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <style name="split_1px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/split_line</item>
+    </style>
+
+    <style name="MyDialogSty">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="InfoBarLeftText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">19dp</item>
+    </style>
+
+    <declare-styleable name="InfoBar">
+        <!-- 左边文字 -->
+        <attr name="infobar_left_text" format="string" localization="suggested"/>
+        <!-- 左边图标 -->
+        <attr name="infobar_left_drawable" format="reference"/>
+        <!-- 左边文字样式 -->
+        <attr name="infobar_left_text_appearance" format="reference"/>
+        <!-- 右边文字 -->
+        <attr name="infobar_right_text" format="string" localization="suggested"/>
+        <!-- 右边图标 -->
+        <attr name="infobar_right_drawable" format="reference"/>
+        <!-- 右边文字样式 -->
+        <attr name="infobar_right_text_appearance" format="reference"/>
+        <!-- 是否需要右侧箭头 -->
+        <attr name="infobar_need_right_arrow" format="boolean"/>
+        <!-- 是否需要右侧箭头 -->
+        <attr name="infobar_need_top_line" format="boolean"/>
+        <!-- 是否需要右侧箭头 -->
+        <attr name="infobar_need_bottom_line" format="boolean"/>
+    </declare-styleable>
+</resources>

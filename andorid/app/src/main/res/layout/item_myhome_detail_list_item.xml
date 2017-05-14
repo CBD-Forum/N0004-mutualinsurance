@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:descendantFocusability="afterDescendants"
+              android:gravity="left|top"
+              android:orientation="horizontal"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="top"
+            android:scaleType="centerInside"
+            android:src="@drawable/dot_03"/>
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginLeft="-63dp"
+            android:layout_marginRight="-63dp"
+            android:background="@drawable/dash_line"
+            android:layerType="software"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:text="2017-3-25"
+            android:textColor="#009ee1"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/count_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:text="本月新增60人"
+            android:textColor="#494949"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/count_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:text="减少40人"
+            android:textColor="#494949"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/count_helped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:text="本月资助人数201234人"
+            android:textColor="#494949"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:text="本月资金余额"
+            android:textColor="#494949"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:text="本月运营成本"
+            android:textColor="#494949"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:text="本月分摊"
+            android:textColor="#494949"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/to_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/button_selector"
+        android:gravity="left|center_vertical"
+        android:text="查看资助详情"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+</LinearLayout>

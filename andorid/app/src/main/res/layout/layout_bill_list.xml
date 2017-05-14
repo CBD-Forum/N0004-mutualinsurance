@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|left"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="10dp"
+        android:lines="2"
+        android:text="拉手互助平台是平安科技基于区块链技术推出的互助计划平台，公开透明，不可篡改，并保证每笔保障的偿付。"
+        android:textColor="#2e2e2e"
+        android:textSize="12dp"/>
+
+
+    <com.pingan.demo.refreshlist.XListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"/>
+</LinearLayout>

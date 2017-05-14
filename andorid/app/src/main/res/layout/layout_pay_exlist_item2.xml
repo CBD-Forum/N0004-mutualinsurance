@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:text="*延误信息数据由中国南方航空提供"
+        android:textColor="#ff5500"
+        android:textSize="9dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left|center_vertical"
+        android:text="姓名：张三"
+        android:textColor="#494949"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/cardId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left|center_vertical"
+        android:text="会员卡号：5300****1234"
+        android:textColor="#2e2e2e"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/delayTimes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left|center_vertical"
+        android:text="本年延误次数：16次"
+        android:textColor="#2e2e2e"
+        android:textSize="12dp"/>
+
+    <Button
+        android:id="@+id/pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector"
+        android:text="一键理赔"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+</LinearLayout>

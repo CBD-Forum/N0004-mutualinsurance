@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">wallet</string>
+
+    <string name="hint_mid">请输入mid</string>
+    <string name="not_supported">暂不支持</string>
+
+
+    <string-array name="spileboard_demos">
+        <!--<item>登录模块</item>-->
+        <!--<item>收银台</item>-->
+        <!--<item>绑卡模块</item>-->
+        <!--<item>二维码扫描</item>-->
+        <!--<item>找回密码</item>-->
+        <!--<item>CMA测试</item>-->
+        <!--<item>信用卡还款</item>-->
+        <!--<item>浏览器测试</item>-->
+        <!--<item>手机充值</item>-->
+        <!--<item>水电煤测试</item>-->
+        <!--<item>转入转出</item>-->
+        <!--<item>医保绑卡</item>-->
+        <!--<item>医保付费</item>-->
+        <item>公共模块</item>
+        <!--<item>理财商城</item>-->
+        <!--<item>花漾卡</item>-->
+        <item>医保</item>
+    </string-array>
+
+    <string-array name="transfer_dest">
+        <item>A</item>
+        <item>B</item>
+        <item>首页</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_request_login">获取登录态</string>
+    <string name="action_qrcode_scan">扫描二维码</string>
+    <string name="action_request_bindcard">绑卡</string>
+
+    <string name="title_business_code">平安付商务号(businessCode)</string>
+    <string name="title_pay_token">账户绑定Token(PayToken)</string>
+    <string name="title_access_token">用户授权token(AccessToken)</string>
+    <string name="title_protocol_token">协议号(ProtocolToken)</string>
+    <string name="title_order_id">订单号(orderId)</string>
+    <string name="title_none_pafu_tools">非平安付支付工具</string>
+    <string name="title_support_banks">支持的银行列表</string>
+    <string name="title_signature">签名字符串</string>
+
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+
+    <string-array name="support_banks" translatable="false">
+        <item>ICBC</item>
+        <item>ABC</item>
+        <item>CCB</item>
+        <item>BCM</item>
+        <item>CEB</item>
+        <item>BOC</item>
+    </string-array>
+
+    <string-array name="support_banks_title" translatable="false">
+        <item>ICBC(中国工商银行)</item>
+        <item>ABC(中国农业银行)</item>
+        <item>CCB(中国建设银行)</item>
+        <item>BCM(中国交通银行)</item>
+        <item>CEB(中国光大银行)</item>
+        <item>BOC(中国银行)</item>
+    </string-array>
+
+    <string-array name="other_pay_tools_title">
+        <item>zfb_pay(支付宝支付)</item>
+        <item>wx_pay(微信支付)</item>
+    </string-array>
+
+    <string-array name="other_pay_tools">
+        <item>zfb_pay</item>
+        <item>wx_pay</item>
+    </string-array>
+
+    <string name="title_order_merchant_orderid">商户流水号/订单号</string>
+    <string name="title_order_merchant_key">商户密钥</string>
+    <string name="title_order_amount">交易金额</string>
+    <string name="title_order_create">生成订单</string>
+
+    <string name="dialog_create_order">生成订单中…</string>
+    <string name="dialog_create_order_failed">生成订单失败</string>
+    <string name="dialog_create_order_success">生成订单成功</string>
+    <string name="error_none_merchant_no">请填写平安付商务号</string>
+
+    <string name="brower_url">请输入连接地址</string>
+    <string name="browser_open">启动CMA</string>
+    <string name="browser_bad_url">非法网址，请重新输入</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+
+    <string-array name="credit_menus">
+        <item>信用卡还款</item>
+        <item>指定信用卡还款</item>
+        <item>当前渠道信用卡还款记录</item>
+        <item>指定信用卡还款记录</item>
+    </string-array>
+
+    <string-array name="cashier_menus">
+        <item>账户收银台+网管收银台</item>
+        <item>账户收银台</item>
+        <item>网管收银台</item>
+    </string-array>
+
+    <string-array name="cashier_result_menus">
+        <item>无任何结果提示</item>
+        <item>Toast显示支付成功</item>
+        <item>展示支付结果页</item>
+    </string-array>
+
+    <string name="credit_card_no">信用卡卡号</string>
+    <string name="credit_card_user">持卡人姓名</string>
+
+    <string name="main_mid">商户端用户ID</string>
+    <string name="main_oauth_token">绑定token</string>
+    <string name="error_mid">请输入商户端用户ID,并牢记!</string>
+    <string name="query">查询</string>
+    <string name="jump">跳转</string>
+    <string name="money_zero">100.00</string>
+    <string name="yb_bind_card">绑卡</string>
+    <string name="yb_card_manage">卡管理</string>
+    <string name="yb_face">人脸识别</string>
+    <string name="start_plugin">启动</string>
+    <string name="yb_appointment">预约挂号</string>
+    <string name="yb_insurance">诊间付费</string>
+    <string name="yb_wallet">医保钱包</string>
+    <string name="yb_cashier">医保收银台</string>
+    <string name="yb_create_orderid">生成订单</string>
+    <string name="yb_paybyself_and_appointment">自费+预约挂号</string>
+    <string name="yb_paybyself_and_insurance">自费+诊间付费</string>
+    <string name="bind_success_text">恭喜！您已成功绑定银行卡\n可以查看缴费记录啦</string>
+
+    <string-array name="public_entry_menus">
+        <item>绑卡</item>
+        <item>申请证书</item>
+    </string-array>
+
+    <string-array name="licai_flower_headStyles">
+        <item>ps_000</item>
+        <item>ps_001</item>
+        <item>ps_002</item>
+        <item>ps_003</item>
+        <item>ps_004</item>
+    </string-array>
+</resources>

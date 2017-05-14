@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:descendantFocusability="afterDescendants"
+              android:orientation="vertical"
+              android:paddingBottom="20dp"
+              android:paddingLeft="30dp"
+              android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/call_03"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="理赔联系电话："
+                android:textColor="#494949"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/pay_phone_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="021-12353443"
+                android:textColor="#2e2e2e"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/text_03"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="理赔准备材料："
+                android:textColor="#494949"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/paper_list_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="身份证原件，复印件"
+                android:textColor="#2e2e2e"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/paper_list_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="驾驶证原件，复印件"
+                android:textColor="#2e2e2e"
+                android:textSize="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
