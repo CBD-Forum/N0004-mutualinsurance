@@ -11,3 +11,8 @@
 
 - client/static
 > 互助帮扶平台Fabric区块链信息展示静态页面
+
+
+## 应用下载
+
+![应用下载](https://static.pgyer.com/app/qrcode/cL5w)
