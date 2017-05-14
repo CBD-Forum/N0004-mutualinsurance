@@ -1,0 +1,684 @@
+swagger: '2.0'
+info:
+  title: mutual insurance API
+  description: Move your app forward with the Uber API
+  version: 1.0.0
+host: '23.91.105.47:7059'
+schemes:
+  - http
+basePath: /v1
+produces:
+  - application/json
+securityDefinitions:
+  basicAuth:
+    type: basic
+security:
+  - basicAuth: []
+paths:
+  /login:
+    get:
+      summary: 用户登录
+      description: 登录系统
+      tags:
+        - User
+      security:
+        - basicAuth: []
+      responses:
+        '200':
+          description: Profile information for a user
+          schema:
+            $ref: '#/definitions/ProfileRes'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /insurance:
+    get:
+      summary: 保险列表
+      description: |
+        列出系统中所有的保险列表。
+      tags:
+        - Insurances
+      responses:
+        '200':
+          description: 返回保险列表
+          schema:
+            $ref: '#/definitions/InsurancesRes'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: 发布保险
+      description: |
+        发布保险
+      tags:
+        - Insurances
+      parameters:
+        - name: Insurance
+          in: body
+          description: 保险信息
+          required: true
+          schema:
+            $ref: '#/definitions/Insurance'
+      responses:
+        '200':
+          description: 返回成功
+          schema:
+            $ref: '#/definitions/OK'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  '/insurance/{id}':
+    get:
+      summary: 保险详情
+      description: |
+        列出系统中所有的保险详情。
+      tags:
+        - Insurances
+      parameters:
+        - name: id
+          in: path
+          description: 保险编号
+          type: string
+          required: true
+      responses:
+        '200':
+          description: 返回保险详情
+          schema:
+            $ref: '#/definitions/InsuranceRes'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  /request:
+    post:
+      summary: 购买保险
+      description: |
+        购买保险
+      tags:
+        - Insurances
+      parameters:
+        - name: InsuranceReq
+          in: body
+          description: 保险信息
+          required: true
+          schema:
+            $ref: '#/definitions/InsuranceReq'
+      responses:
+        '200':
+          description: 返回成功
+          schema:
+            $ref: '#/definitions/OK'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  /claim:
+    post:
+      summary: 申请理赔
+      description: |
+        申请理赔
+      tags:
+        - Claims
+      parameters:
+        - name: ClaimReq
+          in: body
+          description: 理赔信息
+          required: true
+          schema:
+            $ref: '#/definitions/ClaimReq'
+      responses:
+        '200':
+          description: 返回成功
+          schema:
+            $ref: '#/definitions/OK'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  '/claim/{id}':
+    get:
+      summary: 理赔详情
+      description: 理赔详情
+      tags:
+        - User
+      parameters:
+        - name: id
+          in: path
+          description: 理赔编号
+          type: string
+          required: true
+      responses:
+        '200':
+          description: 返回理赔详情
+          schema:
+            $ref: '#/definitions/ClaimRes'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  /approve:
+    post:
+      summary: 批准理赔
+      description: |
+        批准理赔
+      tags:
+        - Claims
+      parameters:
+        - name: ClaimReq
+          in: body
+          description: 批准理赔
+          required: true
+          schema:
+            $ref: '#/definitions/ApproveReq'
+      responses:
+        '200':
+          description: 返回成功
+          schema:
+            $ref: '#/definitions/OK'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  /me:
+    get:
+      summary: 用户详情
+      description: 账户余额、保险列表等
+      tags:
+        - User
+      responses:
+        '200':
+          description: 返回用户详情
+          schema:
+            $ref: '#/definitions/ProfileRes'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  /charge:
+    post:
+      summary: 充值
+      description: |
+        充值
+      tags:
+        - User
+      parameters:
+        - name: ChargeReq
+          in: body
+          description: 充值
+          required: true
+          schema:
+            $ref: '#/definitions/ChargeReq'
+      responses:
+        '200':
+          description: 返回成功
+          schema:
+            $ref: '#/definitions/OK'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  /network/peers:
+    get:
+      summary: 获取区块链网络节点信息
+      description: 获取区块链网络节点信息
+      tags:
+        - Blockchain
+      responses:
+        '200':
+          description: 返回区块链网络节点信息
+          schema:
+            $ref: '#/definitions/Peers'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  /chain:
+    get:
+      summary: 获取区块链信息
+      description: 获取区块链信息
+      tags:
+        - Blockchain
+      responses:
+        '200':
+          description: 返回区块链信息
+          schema:
+            $ref: '#/definitions/BlockchainInfo'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  '/chain/blocks/{id}':
+    get:
+      summary: 获取区块信息
+      description: 获取区块信息
+      tags:
+        - Blockchain
+      parameters:
+        - name: id
+          in: path
+          description: 区块编号
+          type: string
+          required: true
+      responses:
+        '200':
+          description: 返回区块信息
+          schema:
+            $ref: '#/definitions/Block'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+  '/transactions/{id}':
+    get:
+      summary: 获取交易信息
+      description: 获取交易信息
+      tags:
+        - Blockchain
+      parameters:
+        - name: id
+          in: path
+          description: 交易编号
+          type: string
+          required: true
+      responses:
+        '200':
+          description: 返回交易信息
+          schema:
+            $ref: '#/definitions/Transaction'
+        default:
+          description: 返回错误
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Profile:
+    type: object
+    properties:
+      id:
+        type: string
+        description: 用户编号
+      balance:
+        type: number
+        format: double
+        description: 充值余额
+      count_helped:
+        type: integer
+        description: 资助人数
+      fee:
+        type: number
+        format: double
+        description: 分摊总额
+      insurances:
+        type: array
+        description: 保险列表
+        items:
+          $ref: '#/definitions/Insurance'
+  ProfileRes:
+    type: object
+    properties:
+      status:
+        $ref: '#/definitions/Status'
+      data:
+        $ref: '#/definitions/Profile'
+  InsuranceReq:
+    type: object
+    properties:
+      id_insurance:
+        type: string
+        description: 保险编号
+      id_user:
+        type: string
+        description: 用户编号
+      name:
+        type: string
+        description: 姓名
+      idcard:
+        type: string
+        description: 身份证
+      mobile:
+        type: string
+        description: 手机号
+      amount:
+        type: string
+        description: 充值金额
+      medical:
+        type: string
+        description: 病史确认
+      id_driver:
+        type: string
+        description: 驾驶证号
+      id_driving:
+        type: string
+        description: 行驶证号
+      id_didi:
+        type: string
+        description: 滴滴证号
+      id_csa:
+        type: string
+        description: 南航会员号
+      time_bought:
+        type: string
+        description: '购买保险时间，用于模拟不同的时间 2017-05-09 14:55:19'
+      reserved:
+        type: string
+        description: 其他信息
+  InsuranceSta:
+    type: object
+    properties:
+      month:
+        type: string
+        description: 某月 2017-05
+      count_new:
+        type: integer
+        description: 本月新增人数
+      count_quit:
+        type: integer
+        description: 本月减少人数
+      count_helped:
+        type: integer
+        description: 本月资助人数
+      amount:
+        type: number
+        format: double
+        description: 本月资助金额
+      cost:
+        type: number
+        format: double
+        description: 本月运营成本
+      fee:
+        type: number
+        format: double
+        description: 本月分摊
+  Insurance:
+    type: object
+    properties:
+      id:
+        type: string
+        description: 保险编号
+      name:
+        type: string
+        description: 保险名称
+      time_founded:
+        type: string
+        description: 成立时间
+      description:
+        type: array
+        description: 保险描述，10个字符串
+        items:
+          type: string
+      issuer:
+        type: string
+        description: 发起人
+      source:
+        type: string
+        description: 资金来源
+      amount_max:
+        type: string
+        description: 最大保额
+      count_bought:
+        type: string
+        description: 参与人数/投保人数
+      count_helped:
+        type: integer
+        description: 资助人数
+      balance:
+        type: string
+        description: 资金池余额
+      amount:
+        type: number
+        format: double
+        description: 总筹款金额
+      fee:
+        type: string
+        description: 每月分摊
+      bought:
+        type: boolean
+        description: 是否购买
+      claims:
+        type: array
+        description: 理赔列表
+        items:
+          $ref: '#/definitions/Claim'
+      statistics:
+        type: array
+        description: 保险详情
+        items:
+          $ref: '#/definitions/InsuranceSta'
+  InsurancesRes:
+    type: object
+    properties:
+      status:
+        $ref: '#/definitions/Status'
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Insurance'
+  InsuranceRes:
+    type: object
+    properties:
+      status:
+        $ref: '#/definitions/Status'
+      data:
+        $ref: '#/definitions/Insurance'
+  ClaimReq:
+    type: object
+    properties:
+      id_insurance:
+        type: string
+        description: 保险编号
+      id_user:
+        type: string
+        description: 用户编号
+      name:
+        type: string
+        description: 用户姓名
+      mobile:
+        type: string
+        description: 联系方式
+      cardnum:
+        type: string
+        description: 银行卡号
+      time_claimed:
+        type: string
+        description: '公示时间/申请理赔时间，用于模拟不同的时间 2017-05-09 14:55:19'
+  Claim:
+    type: object
+    properties:
+      id_insurance:
+        type: string
+        description: 保险编号
+      id_user:
+        type: string
+        description: 用户编号
+      id_claim:
+        type: string
+        description: 理赔编号
+      name:
+        type: string
+        description: 理赔人姓名
+      mobile:
+        type: string
+        description: 联系方式
+      status:
+        type: string
+        description: 理赔进度
+      amount:
+        type: number
+        format: double
+        description: 理赔金额
+      report_third:
+        type: string
+        description: 第三方报告
+      report_visitor:
+        type: string
+        description: 探望者报告
+      receipt:
+        type: string
+        description: 收款凭证
+      time_claimed:
+        type: string
+        description: '公示时间/申请理赔时间 2017-05-09 14:55:19'
+      time_approved:
+        type: string
+        description: '筹款时间/实际理赔时间 2017-05-09 14:55:19'
+  ClaimRes:
+    type: object
+    properties:
+      status:
+        $ref: '#/definitions/Status'
+      data:
+        $ref: '#/definitions/Claim'
+  ApproveReq:
+    type: object
+    properties:
+      id_insurance:
+        type: string
+        description: 保险编号
+      id_user:
+        type: string
+        description: 用户编号
+      id_claim:
+        type: string
+        description: 理赔编号
+      status:
+        type: string
+        description: 理赔情况
+      amount:
+        type: number
+        format: double
+        description: 理赔金额
+      report_third:
+        type: string
+        description: 第三方报告
+      report_visitor:
+        type: string
+        description: 探望者报告
+      receipt:
+        type: string
+        description: 收款凭证
+      time_approved:
+        type: string
+        description: 筹款时间/实际理赔时间，用于模拟不同的时间
+  ChargeReq:
+    type: object
+    properties:
+      id_user:
+        type: string
+        description: 用户编号
+      amount:
+        type: string
+        description: 充值金额
+  Status:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+        description: 0 is OK
+      message:
+        type: string
+        description: 返回请求编号或者错误信息
+  OK:
+    type: object
+    properties:
+      status:
+        $ref: '#/definitions/Status'
+  Error:
+    type: object
+    properties:
+      status:
+        $ref: '#/definitions/Status'
+  BlockchainInfo:
+    type: object
+    properties:
+      height:
+        type: integer
+        description: 区块高度
+      currentBlockHash:
+        type: string
+        description: 当前区块哈希
+      previousBlockHash:
+        type: string
+        description: 上一个区块哈希
+  Block:
+    type: object
+    properties:
+      version:
+        type: integer
+        description: 版本
+      timestamp:
+        $ref: '#/definitions/Timestamp'
+      transactions:
+        type: array
+        description: 交易信息
+        items:
+          $ref: '#/definitions/Transaction'
+      previousBlockHash:
+        type: string
+        description: 上一个区块哈希
+      nonHashData:
+        type: object
+        properties:
+          localLedgerCommitTimestamp:
+            $ref: '#/definitions/Timestamp'
+  Transaction:
+    type: object
+    properties:
+      type:
+        type: integer
+        description: type
+      chaincodeID:
+        type: string
+        description: chaincode编号
+      payload:
+        type: string
+        description: 有效载荷
+      uuid:
+        type: string
+        description: uuid
+      timestamp:
+        $ref: '#/definitions/Timestamp'
+      cert:
+        type: string
+        description: cert
+      signature:
+        type: string
+        description: signature
+  Timestamp:
+    type: object
+    properties:
+      seconds:
+        type: integer
+        description: seconds
+      nanos:
+        type: integer
+        description: nanos
+  Peers:
+    type: object
+    properties:
+      peers:
+        type: array
+        description: peers
+        items:
+          $ref: '#/definitions/Peer'
+  Peer:
+    type: object
+    properties:
+      ID:
+        type: object
+        description: ID
+        properties:
+          name:
+            type: string
+            description: name
+      address:
+        type: string
+        description: address
+      type:
+        type: integer
+        description: type
+      pkiID:
+        type: string
+        description: pkiID
