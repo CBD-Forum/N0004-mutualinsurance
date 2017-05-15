@@ -13,6 +13,11 @@
 > 互助帮扶平台Fabric区块链信息展示静态页面
 
 
+## 演示视频
+
+链接: <https://pan.baidu.com/s/1skKjCgl> 密码: gyx1
+
+
 ## 应用下载
 
 ![应用下载](https://static.pgyer.com/app/qrcode/cL5w)
